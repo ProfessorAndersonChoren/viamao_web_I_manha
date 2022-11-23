@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+    <h1 class="text-center text-primary">Cadastro de clientes</h1>
+    <main class="container">
+        <form action="cadastroDeClientes.php" method="post">
+            <label for="nomeDoUsuario" class="form-label">Nome:</label>
+            <input type="text" id="nomeDoUsuario" name="nomeDoUsuario" required minlength="3" maxlength="50" class="form-control">
+            <label for="dataDeNascimentoDoUsuario" class="form-label">Data de nascimento:</label>
+            <input type="date" id="dataDeNascimentoDoUsuario" name="dataDeNascimentoDoUsuario" class="form-control">
+            <label for="senhaDoUsuario" class="form-label">Senha</label>
+            <input type="password" id="senhaDoUsuario" name="senhaDoUsuario" class="form-control">
+            <button type="submit" class="btn btn-success mt-3">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
